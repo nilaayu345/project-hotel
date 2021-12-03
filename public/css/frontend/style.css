@@ -499,10 +499,14 @@ button:focus {
   z-index: 1;
 }
 
+/* 
+ * // NOTE: Untuk merubah background dari gambar sesuai dengan lokasi secara statis 
+*/
 .banner_area .bg-parallax {
-  background: url("../image/banner_bg.jpg") no-repeat scroll center 0/cover;
+  background: url("../../image/banner_bg.jpg") no-repeat scroll center 0/cover;
   opacity: 0.50;
 }
+
 
 .banner_area .position {
   width: 100%;
