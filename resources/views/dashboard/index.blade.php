@@ -158,7 +158,11 @@
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
+<<<<<<< HEAD
                     <p>The sports club at the Royal Hotel is very wide and easily accessible by anyone.</p>
+=======
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+>>>>>>> f391914080f653137725879306c6154b592f82d6
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -170,13 +174,21 @@
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
+<<<<<<< HEAD
                     <p>At the Royal Hotel we can rent a car and we use it personally or with a driver.</p>
+=======
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+>>>>>>> f391914080f653137725879306c6154b592f82d6
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
+<<<<<<< HEAD
                     <p>Gymnesium at the royal hotel is one of the favorite places that customers often visit.</p>
+=======
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+>>>>>>> f391914080f653137725879306c6154b592f82d6
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
