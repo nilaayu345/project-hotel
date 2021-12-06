@@ -61,7 +61,7 @@
 					<div class="banner_content text-center">
 						<h6>Away from monotonous life</h6>
 						<h2>Relax Your Mind</h2>
-						<p>If you are looking at blank cassettes on the web, you may be very confused at the<br> difference in price. You may see some for as low as $.17 each.</p>
+						<p>Royal Hotel can make you feel more comfortable<br> Hayam Wuruk Street No.5 Tuban, Jawa Timur, Indonesia</p>
 						<a href="#" class="btn theme_btn button_hover">Get Started</a>
 					</div>
 				</div>
@@ -99,10 +99,9 @@
                                         <div class="book_tabel_item">
                                             <div class="input-group">
                                                 <select class="wide">
-                                                    <option data-display="Adult">Adult</option>
+                                                    <option data-display="Adult">Category</option>
                                                     <option value="1">Old</option>
                                                     <option value="2">Younger</option>
-                                                    <option value="3">Potato</option>
                                                 </select>
                                             </div>
                                             <div class="input-group">
@@ -110,7 +109,6 @@
                                                     <option data-display="Child">Child</option>
                                                     <option value="1">Child</option>
                                                     <option value="2">Baby</option>
-                                                    <option value="3">Child</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -125,7 +123,7 @@
                                                     <option value="3">Room 03</option>
                                                 </select>
                                             </div>
-                                            <a class="book_now_btn button_hover" href="#">Book Now</a>
+                                            <a class="book_now_btn button_hover" href="#">Booking Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -142,7 +140,7 @@
             <div class="container">
                 <div class="section_title text-center">
                     <h2 class="title_color">Hotel Accomodation</h2>
-                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast </p>
                 </div>
                 <div class="row mb_30">
                     <div class="col-lg-3 col-sm-6">
@@ -152,7 +150,7 @@
                                 <a href="#" class="btn theme_btn button_hover">Book Now</a>
                             </div>
                             <a href="#"><h4 class="sec_h4">Double Deluxe Room</h4></a>
-                            <h5>$250<small>/night</small></h5>
+                            <h5>Rp. 3.606.325<small>/Night</small></h5>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -162,7 +160,7 @@
                                 <a href="#" class="btn theme_btn button_hover">Book Now</a>
                             </div>
                             <a href="#"><h4 class="sec_h4">Single Deluxe Room</h4></a>
-                            <h5>$200<small>/night</small></h5>
+                            <h5>Rp. 2.885.060<small>/Night</small></h5>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -172,7 +170,7 @@
                                 <a href="#" class="btn theme_btn button_hover">Book Now</a>
                             </div>
                             <a href="#"><h4 class="sec_h4">Honeymoon Suit</h4></a>
-                            <h5>$750<small>/night</small></h5>
+                            <h5>Rp. 10.818.975<small>/Night</small></h5>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
@@ -182,7 +180,7 @@
                                 <a href="#" class="btn theme_btn button_hover">Book Now</a>
                             </div>
                             <a href="#"><h4 class="sec_h4">Economy Double</h4></a>
-                            <h5>$200<small>/night</small></h5>
+                            <h5>Rp. 2.885.060<small>/Night</small></h5>
                         </div>
                     </div>
                 </div>
@@ -203,37 +201,37 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <p>Restaurant at the Royal Hotel provides a variety of asian food, as well as western food.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <p>The sports club at the Royal Hotel is very wide and easily accessible by anyone..</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pool</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <p>Royal Hotel provides a private pool or a public swimming pool that can be used anytime.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <p>At the Royal Hotel we can rent a car and we use it personally or with a driver..</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <p>Gymnesium at the royal hotel is one of the favorite places that customers often visit.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="facilities_item">
                             <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Bar</h4>
-                            <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            <p>Bar here is often visited by young people to old people just for fun.</p>
                         </div>
                     </div>
                 </div>
@@ -248,7 +246,7 @@
                     <div class="col-md-6 d_flex align-items-center">
                         <div class="about_content ">
                             <h2 class="title title_color">About Us <br>Our History<br>Mission & Vision</h2>
-                            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+                            <p>Inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
                             <a href="#" class="button_hover theme_btn_two">Request Custom Price</a>
                         </div>
                     </div>
@@ -271,8 +269,8 @@
                     <div class="media testimonial_item">
                         <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                         <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <p>I really like the service at this royal hotel.</p>
+                            <a href="#"><h4 class="sec_h4">Celline Salsabiela</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -285,8 +283,8 @@
                     <div class="media testimonial_item">
                         <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                         <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <p>Service at the royal hotel is very satisfying. the facilities are also complete, the place is clean and comfortable.</p>
+                            <a href="#"><h4 class="sec_h4">Arifatun Nisa</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -300,7 +298,7 @@
                         <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                         <div class="media-body">
                             <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <a href="#"><h4 class="sec_h4">Erina Sevianti</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -313,8 +311,8 @@
                     <div class="media testimonial_item">
                         <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                         <div class="media-body">
-                            <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                            <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                            <p>Royal Hotel was the first 4 star hotel I visited and I didn't feel like going home from there. the place and facilities are very complete.</p>
+                            <a href="#"><h4 class="sec_h4">Alfina Nur Azizah</h4></a>
                             <div class="star">
                                 <a href="#"><i class="fa fa-star"></i></a>
                                 <a href="#"><i class="fa fa-star"></i></a>
@@ -333,7 +331,7 @@
         <section class="latest_blog_area section_gap">
             <div class="container">
                 <div class="section_title text-center">
-                    <h2 class="title_color">latest posts from blog</h2>
+                    <h2 class="title_color">Latest Posts From Blog</h2>
                     <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
                 </div>
                 <div class="row mb_30">
@@ -349,7 +347,7 @@
                                 </div>
                                 <a href="#"><h4 class="sec_h4">Low Cost Advertising</h4></a>
                                 <p>Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.</p>
-                                <h6 class="date title_color">31st January,2018</h6>
+                                <h6 class="date title_color">12st December, 2021</h6>
                             </div>	
                         </div>
                     </div>
@@ -365,7 +363,7 @@
                                 </div>
                                 <a href="#"><h4 class="sec_h4">Creative Outdoor Ads</h4></a>
                                 <p>Self-doubt and fear interfere with our ability to achieve or set goals. Self-doubt and fear are</p>
-                                <h6 class="date title_color">31st January,2018</h6>
+                                <h6 class="date title_color">12st December, 2021</h6>
                             </div>	
                         </div>
                     </div>
@@ -381,7 +379,7 @@
                                 </div>
                                 <a href="#"><h4 class="sec_h4">It S Classified How To Utilize Free</h4></a>
                                 <p>Why do you want to motivate yourself? Actually, just answering that question fully can </p>
-                                <h6 class="date title_color">31st January,2018</h6>
+                                <h6 class="date title_color">12st December, 2021</h6>
                             </div>	
                         </div>
                     </div>
@@ -407,17 +405,16 @@
                                 <div class="col-4">
                                     <ul class="list_style">
                                         <li><a href="#">Home</a></li>
-                                        <li><a href="#">Feature</a></li>
-                                        <li><a href="#">Services</a></li>
-                                        <li><a href="#">Portfolio</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Gallery</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-4">
                                     <ul class="list_style">
-                                        <li><a href="#">Team</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Accomodation</a></li>
                                         <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Sign In</a></li>
                                     </ul>
                                 </div>										
                             </div>							
