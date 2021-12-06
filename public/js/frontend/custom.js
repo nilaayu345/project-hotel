@@ -64,7 +64,7 @@
         daysOfWeekDisabled: [0, 6]
     });
     
-     /*---------gallery isotope js-----------*/
+    /*---------gallery isotope js-----------*/
     function galleryMasonry(){
         if ( $('#gallery').length ){
             $('#gallery').imagesLoaded( function() {
@@ -81,6 +81,7 @@
             })
         }
     }
+
     galleryMasonry();
 	
 	/*----------------------------------------------------*/

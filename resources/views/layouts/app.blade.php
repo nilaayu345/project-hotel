@@ -23,24 +23,28 @@
 <body class="layout-top-nav" style="height: auto;">
    @include('layouts.header')
 
+   @yield('breadcrumb')
+   
    <div class="container">
       @yield('content')
    </div>
 
    @include('layouts.footer')
-   
+
    <script src="js/frontend/jquery-3.2.1.min.js"></script>
    <script src="js/frontend/popper.js"></script>
    <script src="js/frontend/bootstrap.min.js"></script>
    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
    <script src="js/frontend/jquery.ajaxchimp.min.js"></script>
-   <script src="js/frontend/mail-script.js"></script>
    <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
    <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
    <script src="js/frontend/mail-script.js"></script>
    <script src="js/frontend/stellar.js"></script>
+   {{-- <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script> --}}
+   <script src="vendors/isotope/isotope-min.js"></script>
    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
    <script src="js/frontend/custom.js"></script>
+   
    @stack('js')
 </body>
 </html>
