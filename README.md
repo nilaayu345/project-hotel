@@ -2,7 +2,7 @@
 
 # How to install
    * `$ git clone https://github.com/agusprasetyo30/project_hotel.git`
-   * `$ cd marketplace-nelayanv2` 
+   * `$ cd project_hotel` 
    * `$ composer install`, kalau tidak bisa cona `$ composer update`
    * copy `env.example` dan rubah menjadi `.env`, setelah itu konfigurasi database
    * `$ php artisan key:generate`
