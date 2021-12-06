@@ -3,6 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content')
+
 <!--================Banner Area =================-->
 <section class="banner_area">
     <div class="booking_table d_flex align-items-center">
@@ -11,7 +12,7 @@
             <div class="banner_content text-center">
                 <h6>Away from monotonous life</h6>
                 <h2>Relax Your Mind</h2>
-                <p>If you are looking at blank cassettes on the web, you may be very confused at the<br> difference in price. You may see some for as low as $.17 each.</p>
+                <p>Royal Hotel can make your holiday very colorful and memorable<br> Hayam Wuruk Street No.60 Tuban, Jawa Timur, Indonesia.</p>
                 <a href="#" class="btn theme_btn button_hover">Get Started</a>
             </div>
         </div>
@@ -20,7 +21,7 @@
         <div class="container">
             <div class="hotel_booking_table">
                 <div class="col-md-3">
-                    <h2>Book<br> Your Room</h2>
+                    <h2>Booking<br> Your Room</h2>
                 </div>
                 <div class="col-md-9">
                     <div class="boking_table">
@@ -52,7 +53,6 @@
                                             <option data-display="Adult">Adult</option>
                                             <option value="1">Old</option>
                                             <option value="2">Younger</option>
-                                            <option value="3">Potato</option>
                                         </select>
                                     </div>
                                     <div class="input-group">
@@ -60,7 +60,6 @@
                                             <option data-display="Child">Child</option>
                                             <option value="1">Child</option>
                                             <option value="2">Baby</option>
-                                            <option value="3">Child</option>
                                         </select>
                                     </div>
                                 </div>
@@ -75,7 +74,7 @@
                                             <option value="3">Room 03</option>
                                         </select>
                                     </div>
-                                    <a class="book_now_btn button_hover" href="#">Book Now</a>
+                                    <a class="book_now_btn button_hover" href="#">Booking Now</a>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +101,7 @@
                         <a href="#" class="btn theme_btn button_hover">Book Now</a>
                     </div>
                     <a href="#"><h4 class="sec_h4">Double Deluxe Room</h4></a>
-                    <h5>$250<small>/night</small></h5>
+                    <h5>Rp. 3.606.480<small>/night</small></h5>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -112,7 +111,7 @@
                         <a href="#" class="btn theme_btn button_hover">Book Now</a>
                     </div>
                     <a href="#"><h4 class="sec_h4">Single Deluxe Room</h4></a>
-                    <h5>$200<small>/night</small></h5>
+                    <h5>Rp. 2.885.660<small>/night</small></h5>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -122,7 +121,7 @@
                         <a href="#" class="btn theme_btn button_hover">Book Now</a>
                     </div>
                     <a href="#"><h4 class="sec_h4">Honeymoon Suit</h4></a>
-                    <h5>$750<small>/night</small></h5>
+                    <h5>Rp. 10.540.756<small>/night</small></h5>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
@@ -132,7 +131,7 @@
                         <a href="#" class="btn theme_btn button_hover">Book Now</a>
                     </div>
                     <a href="#"><h4 class="sec_h4">Economy Double</h4></a>
-                    <h5>$200<small>/night</small></h5>
+                    <h5>Rp. 2.885.660<small>/night</small></h5>
                 </div>
             </div>
         </div>
@@ -153,37 +152,49 @@
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
-                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    <p>Restaurant at the Royal Hotel provides a variety of asian food, as well as western food.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
+<<<<<<< HEAD
+                    <p>The sports club at the Royal Hotel is very wide and easily accessible by anyone.</p>
+=======
                     <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+>>>>>>> f391914080f653137725879306c6154b592f82d6
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pool</h4>
-                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    <p>Royal Hotel provides a private pool or a public swimming pool that can be used anytime.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
+<<<<<<< HEAD
+                    <p>At the Royal Hotel we can rent a car and we use it personally or with a driver.</p>
+=======
                     <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+>>>>>>> f391914080f653137725879306c6154b592f82d6
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
+<<<<<<< HEAD
+                    <p>Gymnesium at the royal hotel is one of the favorite places that customers often visit.</p>
+=======
                     <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+>>>>>>> f391914080f653137725879306c6154b592f82d6
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Bar</h4>
-                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    <p>Bar here is often visited by young people to old people just for fun.</p>
                 </div>
             </div>
         </div>
@@ -221,8 +232,8 @@
             <div class="media testimonial_item">
                 <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                 <div class="media-body">
-                    <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                    <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                    <p>I really like the service at this royal hotel. </p>
+                    <a href="#"><h4 class="sec_h4">Celline Salsabiela</h4></a>
                     <div class="star">
                         <a href="#"><i class="fa fa-star"></i></a>
                         <a href="#"><i class="fa fa-star"></i></a>
@@ -235,8 +246,8 @@
             <div class="media testimonial_item">
                 <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                 <div class="media-body">
-                    <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                    <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                    <p>Service at the royal hotel is very satisfying. the facilities are also complete, the place is clean and comfortable. </p>
+                    <a href="#"><h4 class="sec_h4">Arifatun Nisa</h4></a>
                     <div class="star">
                         <a href="#"><i class="fa fa-star"></i></a>
                         <a href="#"><i class="fa fa-star"></i></a>
@@ -249,8 +260,8 @@
             <div class="media testimonial_item">
                 <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                 <div class="media-body">
-                    <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                    <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                    <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the. </p>
+                    <a href="#"><h4 class="sec_h4">Alfina Nur Azizah</h4></a>
                     <div class="star">
                         <a href="#"><i class="fa fa-star"></i></a>
                         <a href="#"><i class="fa fa-star"></i></a>
@@ -263,8 +274,8 @@
             <div class="media testimonial_item">
                 <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
                 <div class="media-body">
-                    <p>As conscious traveling Paupers we must always be concerned about our dear Mother Earth. If you think about it, you travel across her face, and She is the </p>
-                    <a href="#"><h4 class="sec_h4">Fanny Spencer</h4></a>
+                    <p>Royal Hotel was the first 4 star hotel I visited and I didn't feel like going home from there. the place and facilities are very complete.</p>
+                    <a href="#"><h4 class="sec_h4">Erina Sevianti</h4></a>
                     <div class="star">
                         <a href="#"><i class="fa fa-star"></i></a>
                         <a href="#"><i class="fa fa-star"></i></a>
