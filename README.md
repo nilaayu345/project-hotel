@@ -13,10 +13,13 @@
 # Progress
    ### Minggu 1
    
-   - Memasukan template ke file laravel
-   - Konfigurasi dan desan tampilan login, Register, dan logout
-   - Menambahkan controller `UserController`, `DashboardController`, `AdminController`, `CustomerController`
-   - menghapus `Auth::routes()` dan membuat *custom route authentification* yang nantinya digunakan untuk mengatur manual route authentification/login
-   - Menambahkan Library : 
-     - `intervention/image` => untuk upload gambar/custom penyimpanan
-     - `spatie/laravel-permission` => mengatur role/hak akses user
+   1. v0.0.1
+      - Memasukan template ke file laravel
+      - Konfigurasi dan desan tampilan login, Register, dan logout
+      - Menambahkan controller `UserController`, `DashboardController`, `AdminController`, `CustomerController`
+      - menghapus `Auth::routes()` dan membuat *custom route authentification* yang nantinya digunakan untuk mengatur manual route authentification/login
+      - Menambahkan Library : 
+        - `intervention/image` => untuk upload gambar/custom penyimpanan
+        - `spatie/laravel-permission` => mengatur role/hak akses user
+   2. v0.0.2
+      - ...
