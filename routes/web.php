@@ -16,8 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+/** DASHBOARD **/
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/about', [DashboardController::class, 'aboutUs'])->name('about');
+Route::get('/contact', [DashboardController::class, 'contactUs'])->name('contact');
+Route::get('/booking', [DashboardController::class, 'booking'])->name('booking');
+Route::get('/gallery', [DashboardController::class, 'gallery'])->name('gallery');
+
 
 // Login, Logout, Register
 Route::get('/login', [LoginController::class, 'showLoginForm'])->middleware('guest')->name('login');

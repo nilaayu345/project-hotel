@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <link rel="icon" href="image/favicon.png" type="image/png">
-   <title>@yield('title') | Welcome To Royal Hotel</title>
+   <title>@yield('title') | Hotel bla bla bla</title>
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="css/frontend/bootstrap.css">
    <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -21,13 +21,10 @@
    @stack('css')
 </head>
 <body class="layout-top-nav" style="height: auto;">
-   @include('layouts.header')
 
    <div class="container">
       @yield('content')
    </div>
-
-   @include('layouts.footer')
    
    <script src="js/frontend/jquery-3.2.1.min.js"></script>
    <script src="js/frontend/popper.js"></script>

@@ -1,28 +1,28 @@
-@extends('layouts.app')
+@extends('auth.layouts.app')
 
 @section('title', 'Login Area')
 
 @push('css')
 <style>
-    body {
-        background: #d2d6de;
-        font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif,  Open Sans;
-        font-size: 14px;
-        line-height: 1.42857;
-        height: 350px;
-        padding: 0;
-        margin: 0;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        font-weight: 400;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
+   body {
+      background: #d2d6de;
+      font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif,  Open Sans;
+      font-size: 14px;
+      line-height: 1.42857;
+      height: 350px;
+      padding: 0;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-weight: 400;
+      overflow-x: hidden;
+      overflow-y: auto;
+   }
 
-.login-box, .register-box {
-    width: 360px;
-    margin: 11% auto;
-}
+   .login-box, .register-box {
+      width: 360px;
+      margin: 11% auto;
+   }
 
 </style>
 @endpush
