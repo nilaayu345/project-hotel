@@ -15,8 +15,10 @@
          </div>
          <div class="col-md-3">
             <div class="input-group-icon">
-               <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
-               <input type="search" name="search" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'" required="" class="single-input border">
+               <form action="{{ route('admin.pengguna.index') }}" method="get">
+                  <div class="icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+                  <input type="search" name="search" value="{{ Request::get('search') }}" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'" class="single-input border">
+               </form>
             </div>
          </div>
       </div>
@@ -39,8 +41,9 @@
                   <td>{{ $user->email }}</td>
                   <td>{{ $user->phone }}</td>
                   <td>
-                     <span class="badge badge-primary">ADMIN</span>
-                     <span class="badge badge-dark">CUSTOMER</span>
+                     @foreach ($user->getRoleNames() as $role)
+                        <span class="badge {{ $role == 'ADMIN' ? 'badge-primary' : 'badge-dark' }}">{{ $role }}</span>
+                     @endforeach
                   </td>
                   <td>
                      <a href="{{ route('admin.pengguna.edit', ['id' => $user->id]) }}" class="genric-btn primary radius medium">Edit</a>

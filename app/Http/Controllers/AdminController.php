@@ -7,9 +7,12 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function listPengguna() {
-        $users = User::all();
+    public function listPengguna(Request $request) {
+        $keyword = $request->get('search') ? $request->get('search') : '';
 
+        $users = User::where("name", "LIKE", "%$keyword%")->get();
+
+        // dd($users->getRoleNames()->first());
         return view('admin.pengguna.index', compact('users'));
     }
 

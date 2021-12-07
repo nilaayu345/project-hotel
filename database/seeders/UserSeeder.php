@@ -26,13 +26,17 @@ class UserSeeder extends Seeder
         $admin->phone = "08331112121";
         $admin->save();
 
+        $admin->assignRole('ADMIN');
+
         // Customer
-        $admin = new User();
-        $admin->name = 'customer';
-        $admin->email = 'customer@gmail.com';
-        $admin->password = Hash::make('customer'); // password = 'customer'
-        $admin->phone = "083131555533";
-        $admin->save();
+        $customer = new User();
+        $customer->name = 'customer';
+        $customer->email = 'customer@gmail.com';
+        $customer->password = Hash::make('customer'); // password = 'customer'
+        $customer->phone = "083131555533";
+        $customer->save();
+
+        $customer->assignRole('CUSTOMER');
 
         echo"[+] Add User Success . . . \n";
 
