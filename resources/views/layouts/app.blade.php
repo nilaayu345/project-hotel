@@ -14,6 +14,7 @@
    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+   <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
    <!-- main css -->
    <link rel="stylesheet" href="css/frontend/style.css">
    <link rel="stylesheet" href="css/frontend/responsive.css">
@@ -40,7 +41,7 @@
    <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
    <script src="js/frontend/mail-script.js"></script>
    <script src="js/frontend/stellar.js"></script>
-   {{-- <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script> --}}
+   <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
    <script src="vendors/isotope/isotope-min.js"></script>
    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
    <script src="js/frontend/custom.js"></script>

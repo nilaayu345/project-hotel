@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'About Us')
+@section('title', 'Gallery')
 
-@section('sub-title', 'about')
+@section('sub-title', 'gallery')
 
 {{-- Menambahkan tampilan breadcrumb --}}
 @include('layouts.breadcrumb')

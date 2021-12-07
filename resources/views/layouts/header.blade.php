@@ -12,12 +12,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul class="nav navbar-nav menu_nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="{{ route('dashboard') }}">Home</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('booking') }}">Booking</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Sign In</a></li>
+                    <li class="nav-item {{ Request::path() == '/' ? 'active' : '' }}"><a class="nav-link" href="{{ route('dashboard') }}">Home</a></li> 
+                    <li class="nav-item {{ Request::path() == 'about' || Request::is('about*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
+                    <li class="nav-item {{ Request::path() == 'booking' || Request::is('booking/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('booking') }}">Booking</a></li>
+                    <li class="nav-item {{ Request::path() == 'gallery' || Request::is('gallery/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
+                    <li class="nav-item {{ Request::path() == 'contact' || Request::is('contact/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('contact') }}">Contact Us</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="{{ route('login') }}">Sign In</a></li>
                 </ul>
             </div> 
         </nav>
