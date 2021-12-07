@@ -123,4 +123,5 @@
     </div>
 </section>
 <!--================ Facilities Area  =================-->
+<p style="padding: 100px 0px"></p>
 @endsection

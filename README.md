@@ -22,4 +22,6 @@
         - `intervention/image` => untuk upload gambar/custom penyimpanan
         - `spatie/laravel-permission` => mengatur role/hak akses user
    2. v0.0.2
-      - ...
+      - Menambahkan breadcrumb
+      - Menambahkan menu <active>
+      - Merubah isi dari template
