@@ -21,7 +21,17 @@
       - Menambahkan Library : 
         - `intervention/image` => untuk upload gambar/custom penyimpanan
         - `spatie/laravel-permission` => mengatur role/hak akses user
+   
+   ### Minggu 2
    2. v0.0.2
       - Menambahkan breadcrumb
       - Menambahkan menu <active>
       - Merubah isi dari template
+   3. v0.0.3
+      - Menyelesaikan Create, Update pada Pengguna View dan Controller
+      - Menambahkan role `ADMIN` dan `CUSTOMER`
+      - Menambahkan role di setiap role user untuk seeder
+      - Menambahkan `Helpers/Helper.php` untuk helper data
+         > Catatan
+        - Menghapus `AdminController` & `CustomerController`
+        - Nantinya untuk controller di sesuaikan sesuai fungsinya

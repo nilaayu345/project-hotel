@@ -40,9 +40,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
     /** PENGGUNA **/
     Route::group(['prefix' => 'pengguna', 'as' => 'pengguna.'], function() {
-        Route::get('/', [AdminController::class, 'listPengguna'])->name('index');
-        Route::get('/create', [AdminController::class, 'tambahPengguna'])->name('create');
-        Route::get('/{id}/edit', [AdminController::class, 'editPengguna'])->name('edit');
+        Route::get('/', [UserController::class, 'listPengguna'])->name('index');
+        Route::get('/create', [UserController::class, 'createPengguna'])->name('create');
+        Route::post('/create', [UserController::class, 'storePengguna'])->name('store');
+        Route::get('/{id}/edit', [UserController::class, 'editPengguna'])->name('edit');
+        Route::put('/{id}/update', [UserController::class, 'updatePengguna'])->name('update');
     });
 });
 

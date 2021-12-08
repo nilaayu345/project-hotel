@@ -21,7 +21,7 @@
                      @endif
                   </p>
                   
-                  <form action="{{ route('registration') }}" method="POST">
+                  <form action="{{ route('admin.pengguna.store') }}" method="POST">
                      @csrf
                      <div class="input-group mb-3">
                         <input type="text" name="name" class="form-control" placeholder="Nama" autofocus="on" autocomplete="off" required>
@@ -34,6 +34,17 @@
                      </div>
                      <div class="input-group mb-3">
                         <input type="text" name="phone" class="form-control" placeholder="Phone" autofocus="on" autocomplete="off" required>
+                     </div>
+                     <div class="form-group mb-3">
+                        @php
+                           $roles = Spatie\Permission\Models\Role::all();
+                        @endphp
+                        <select class="form-control" name="role">
+                           <option selected disabled>Select Role</option>
+                           @foreach ($roles as $role)
+                              <option value="{{ $role->name }}">{{ $role->name }}</option>
+                           @endforeach
+                        </select>
                      </div>
                      <div class="row mb-3">
                         <div class="col-12">

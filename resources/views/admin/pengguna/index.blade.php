@@ -34,9 +34,9 @@
             </tr>
          </thead>
          <tbody>
-            @foreach ($users as $i => $user)
+            @foreach ($users as $user)
                <tr>
-                  <th scope="row">{{ ++$i }}. </th>
+                  <th scope="row">{{ $number++ }}. </th>
                   <td>{{ $user->name }}</td>
                   <td>{{ $user->email }}</td>
                   <td>{{ $user->phone }}</td>
@@ -51,6 +51,13 @@
                </tr>
             @endforeach
          </tbody>
+         <tfoot>
+            <tr>
+               <td colspan="6" align="center">
+                  {{ $users->appends(Request::all())->links()}}
+               </td>
+            </tr>
+         </tfoot>
       </table>
    </div>
 

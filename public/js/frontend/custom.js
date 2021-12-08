@@ -59,10 +59,10 @@
 	parallaxEffect();
     
     
-    $('select').niceSelect();
-    $('#datetimepicker11,#datetimepicker1').datetimepicker({
-        daysOfWeekDisabled: [0, 6]
-    });
+    // $('select').niceSelect();
+    // $('#datetimepicker11,#datetimepicker1').datetimepicker({
+    //     daysOfWeekDisabled: [0, 6]
+    // });
     
     /*---------gallery isotope js-----------*/
     function galleryMasonry(){

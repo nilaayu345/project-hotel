@@ -16,13 +16,14 @@
                      @if (session()->has('error.alert'))
                         <div class="alert alert-danger alert-dismissible text-left">
                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                                    {{ session('error.alert') }}
+                                 {{ session('error.alert') }}
                         </div>
                      @endif
                   </p>
                   
-                  <form action="{{ route('registration') }}" method="POST">
+                  <form action="{{ route('admin.pengguna.update', ['id' => $user->id]) }}" method="POST">
                      @csrf
+                     @method('put')
                      <div class="input-group mb-3">
                         <input type="email" name="email" class="form-control" placeholder="Email" autofocus="on" autocomplete="off" required value="{{ $user->email }}" readonly>
                      </div>
@@ -32,8 +33,19 @@
                      <div class="input-group mb-3">
                         <input type="text" name="phone" class="form-control" placeholder="Phone" autofocus="on" autocomplete="off" required value="{{ $user->phone }}">
                      </div>
+                     <div class="form-group mb-3">
+                        @php
+                           $roles = Spatie\Permission\Models\Role::all();
+                        @endphp
+                        <select class="form-control" name="role">
+                           <option selected disabled>Select Role</option>
+                           @foreach ($roles as $role)
+                              <option value="{{ $role->name }}" {{ $user->getRoleNames()->first() == $role->name ? 'selected' : '' }}>{{ $role->name }}</option>
+                           @endforeach
+                        </select>
+                     </div>
                      <div class="mb-3">
-                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                        <input type="password" name="password" class="form-control" placeholder="Password" >
                         <div class="">
                            <small class="text-danger d-block float-left">* Kosongkan kalau tidak mengubah password</small>
                         </div>
