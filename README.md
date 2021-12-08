@@ -35,3 +35,4 @@
          > Catatan
         - Menghapus `AdminController` & `CustomerController`
         - Nantinya untuk controller di sesuaikan sesuai fungsinya
+        - Route untuk admin adalah `localhost:8000/admin/.....`
