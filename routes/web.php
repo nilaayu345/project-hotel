@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,6 +46,17 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::post('/create', [UserController::class, 'storePengguna'])->name('store');
         Route::get('/{id}/edit', [UserController::class, 'editPengguna'])->name('edit');
         Route::put('/{id}/update', [UserController::class, 'updatePengguna'])->name('update');
+    });
+
+    /** GALLERY **/
+    Route::group(['prefix' => 'gallery', 'as' => 'gallery.'], function() {
+        Route::get('/', [GalleryController::class, 'indexGallery'])->name('index');
+        Route::get('/create', [GalleryController::class, 'createGallery'])->name('create');
+        Route::post('/create', [GalleryController::class, 'storeGallery'])->name('store');
+        Route::get('/{id}/edit', [GalleryController::class, 'editGallery'])->name('edit');
+        Route::put('/{id}/update', [GalleryController::class, 'updateGallery'])->name('update');
+        Route::get('/{id}/delete', [GalleryController::class, 'destroyGallery'])->name('delete');
+        
     });
 });
 

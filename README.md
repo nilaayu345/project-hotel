@@ -10,6 +10,8 @@
    * `$ php artisan db:seed` untuk mengisi dummy data pada tabel
    * `$ php artisan serve` jalankan program
 
+# Routing
+- ...
 # Progress
    ### Minggu 1
    
