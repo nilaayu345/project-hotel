@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -56,7 +57,17 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::get('/{id}/edit', [GalleryController::class, 'editGallery'])->name('edit');
         Route::put('/{id}/update', [GalleryController::class, 'updateGallery'])->name('update');
         Route::get('/{id}/delete', [GalleryController::class, 'destroyGallery'])->name('delete');
-        
+    });
+
+    /** FACILITY **/
+    Route::group(['prefix' => 'facility', 'as' => 'facility.'], function() {
+        Route::get('/', [FacilityController::class, 'indexFacility'])->name('index');
+        Route::get('/create', [FacilityController::class, 'createFacility'])->name('create');
+        Route::post('/create', [FacilityController::class, 'storeFacility'])->name('store');
+        Route::get('/{id}/edit', [FacilityController::class, 'editFacility'])->name('edit');
+        Route::put('/{id}/update', [FacilityController::class, 'updateFacility'])->name('update');
+        Route::get('/{id}/delete', [FacilityController::class, 'destroyFacility'])->name('delete');
+
     });
 });
 

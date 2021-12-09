@@ -111,6 +111,6 @@ class GalleryController extends Controller
             $gallery->delete();
         }
 
-        return redirect()->route('admin.gallery.index');
+        return redirect()->back();
     }
 }

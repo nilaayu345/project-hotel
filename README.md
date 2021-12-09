@@ -34,7 +34,10 @@
       - Menambahkan role `ADMIN` dan `CUSTOMER`
       - Menambahkan role di setiap role user untuk seeder
       - Menambahkan `Helpers/Helper.php` untuk helper data
-         > Catatan
+         Catatan
         - Menghapus `AdminController` & `CustomerController`
         - Nantinya untuk controller di sesuaikan sesuai fungsinya
         - Route untuk admin adalah `localhost:8000/admin/.....`
+   4. v0.0.4
+      -  Menyelesaikan Create, Update, Delete pada facility View dan Controller
+      -  
