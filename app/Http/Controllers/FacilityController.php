@@ -90,6 +90,6 @@ class FacilityController extends Controller
         $facility = Facility::find($id);
         $facility->delete();
 
-        return redirect()->back();
+        return redirect()->route('admin.facility.index');
     }
 }

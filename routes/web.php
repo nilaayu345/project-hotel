@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\RoomController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -67,7 +68,17 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::get('/{id}/edit', [FacilityController::class, 'editFacility'])->name('edit');
         Route::put('/{id}/update', [FacilityController::class, 'updateFacility'])->name('update');
         Route::get('/{id}/delete', [FacilityController::class, 'destroyFacility'])->name('delete');
+    });
 
+    /** ROOM **/
+    Route::group(['prefix' => 'room', 'as' => 'room.'], function() {
+        Route::get('/', [RoomController::class, 'indexRoom'])->name('index');
+        Route::get('/create', [RoomController::class, 'createRoom'])->name('create');
+        Route::post('/create', [RoomController::class, 'storeRoom'])->name('store');
+        Route::get('/{id}', [RoomController::class, 'showRoom'])->name('show');
+        Route::get('/{id}/edit', [RoomController::class, 'editRoom'])->name('edit');
+        Route::put('/{id}/update', [RoomController::class, 'updateRoom'])->name('update');
+        Route::get('/{id}/add-facility', [RoomController::class, 'addRoomFacility'])->name('add-facility');
     });
 });
 

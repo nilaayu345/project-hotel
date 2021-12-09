@@ -29,7 +29,7 @@
                      <div class="row mb-3">
                         <div class="col-12">
                            <button type="submit" class="btn btn-success btn-block">Simpan</button>
-                           <a class="btn btn-warning btn-block" href="{{ route('admin.pengguna.index') }}">Kembali</a>
+                           <a class="btn btn-warning btn-block" href="{{ route('admin.gallery.index') }}">Kembali</a>
                         </div>
                      </div>
                   </form>

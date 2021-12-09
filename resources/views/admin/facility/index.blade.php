@@ -3,7 +3,6 @@
 @section('title', "Facility")
 
 @section('content')
-   {{-- <h1 class="section_gap">acca</h1> --}}
    <div class="container section_gap">
       <div class="mb-5 text-center">
          <h2 class="title_color">Facility</h2>
@@ -37,7 +36,7 @@
                   <td>{{ $facility->facility_name }}</td>
                   <td>
                      <a href="{{ route('admin.facility.edit', ['id' => $facility->id]) }}" class="genric-btn primary radius medium">Edit</a>
-                     <a href="{{ route('admin.facility.delete', ['id' => $facility->id]) }}" class="genric-btn danger radius medium">Delete</a>
+                     <a href="{{ route('admin.facility.delete', ['id' => $facility->id]) }}" onclick="return confirm('Apakah anda yakin menghapus data ini ?')" class="genric-btn danger radius medium">Delete</a>
                   </td>
                </tr>
             @endforeach
