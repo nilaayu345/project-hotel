@@ -36,7 +36,7 @@
                <tr>
                   <th scope="row">{{ $number++ }} </th>
                   <td><a href="{{ route('admin.room.show', ['id' => $room->id]) }}">{{ $room->name }}</a></td>
-                  <td>Rp. {{ $room->price }}</td>
+                  <td>{{ convertRupiah($room->price) }}</td>
                   <td>{{ $room->description }}</td>
                   <td>
                      {{-- <a href="{{ route('admin.facility.edit', ['id' => $facility->id]) }}" class="genric-btn primary radius medium">Edit</a> --}}

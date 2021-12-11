@@ -31,9 +31,11 @@ class RoomController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function showRoom()
+    public function showRoom($id)
     {
-        // return view('admin.room.create');
+        $room = Room::find($id);
+
+        return view('admin.room.show', compact('room'));
     }
 
     /**

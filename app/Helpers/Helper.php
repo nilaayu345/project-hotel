@@ -72,4 +72,17 @@ use Intervention\Image\Facades\Image;
          return $location . '/' . $images;
       }
    }
+
+   if (!function_exists('convertRupiah')) {
+      /**
+       * mengkonversi nomer/nilai uang menjadi nilai rupiah
+      *
+      * @param [int] $value
+      * @return void
+      */
+      function convertRupiah($value)
+      {
+         return 'Rp. '. number_format($value, 0, ",", ".");  
+      }
+   }
 ?>
