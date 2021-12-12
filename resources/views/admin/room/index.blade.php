@@ -39,10 +39,8 @@
                   <td>{{ convertRupiah($room->price) }}</td>
                   <td>{{ $room->description }}</td>
                   <td>
-                     {{-- <a href="{{ route('admin.facility.edit', ['id' => $facility->id]) }}" class="genric-btn primary radius medium">Edit</a> --}}
                      <div class="btn-group-vertical btn-group-justified">
-                        <a href="{{ route('admin.room.edit', ['id' => $room->id]) }}" class="genric-btn primary radius medium btn-block">Edit</a>
-                        <a href="{{ route('admin.room.add-facility', ['id' => $room->id]) }}" class="genric-btn info radius medium btn-block">Tambah Fasilitas</a>
+                        <a href="{{ route('admin.room.edit', ['id' => $room->id]) }}" class="genric-btn primary radius medium btn-block">Edit & Tambah Fasilitas</a>
                      </div>
                   </td>
                </tr>

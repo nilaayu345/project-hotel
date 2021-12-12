@@ -78,7 +78,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::get('/{id}', [RoomController::class, 'showRoom'])->name('show');
         Route::get('/{id}/edit', [RoomController::class, 'editRoom'])->name('edit');
         Route::put('/{id}/update', [RoomController::class, 'updateRoom'])->name('update');
-        Route::get('/{id}/add-facility', [RoomController::class, 'addRoomFacility'])->name('add-facility');
+        Route::get('/{id}/facility/{facility_id}', [RoomController::class, 'processRoomFacility'])->name('process-facility');
     });
 });
 

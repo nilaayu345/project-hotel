@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Facility;
 use App\Models\Room;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class RoomController extends Controller
 {
@@ -21,6 +23,8 @@ class RoomController extends Controller
         $rooms = Room::where("name", "LIKE", "%$keyword%")->simplePaginate($jumlah_halaman);
 
         $number = numberPagination($jumlah_halaman);
+
+        // dd($rooms->find(2)->facility);
 
         return view('admin.room.index', compact('rooms', 'number'));
     }
@@ -82,7 +86,13 @@ class RoomController extends Controller
      */
     public function editRoom($id)
     {
-        //
+        $jumlah_halaman = 5;
+        $room = Room::find($id);
+
+        $number = numberPagination($jumlah_halaman);
+        $facilities = Facility::simplePaginate($jumlah_halaman);
+
+        return view('admin.room.edit', compact('room', 'facilities', 'number'));
     }
 
     /**
@@ -94,7 +104,29 @@ class RoomController extends Controller
      */
     public function updateRoom(Request $request, $id)
     {
-        //
+        // dd($request->all(), $request->file(), $id);
+
+        $room = Room::find($id);
+        
+        $room->name = $request->get('room_name');
+        $room->price = $request->get('price');
+        $room->description = $request->get('description');
+
+        $gambar = $request->file('image');
+        
+        if ($gambar) {
+            if ($room->image_path && file_exists(storage_path('app/public/' . $room->image_path)))
+            {
+                Storage::delete('public/' . $room->image_path);
+            }
+
+            $image_path = uploadOriginalImage($gambar, "room", "room");
+            $room->image_path = $image_path;
+        }
+
+        $room->save();
+
+        return redirect()->route('admin.room.index');
     }
 
     /**
@@ -104,8 +136,23 @@ class RoomController extends Controller
      * @param [type] $id
      * @return void
      */
-    public function addRoomFacility(Request $request, $id)
+    public function processRoomFacility(Request $request, $id, $facility_id)
     {
-        //
+        $type = $request->get('type');
+
+        $room = Room::findOrFail($id);
+
+        // jika tipenya 'ADD'
+        if ($type == 'add') {
+            $room->facility()->attach($facility_id);
+
+            return redirect()->back();
+        } else if (($type == 'delete')) {
+            $room->facility()->detach($facility_id);
+
+            return redirect()->back();
+        } else {
+            abort(404);
+        }
     }
 }

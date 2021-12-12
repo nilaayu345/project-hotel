@@ -18,6 +18,9 @@
                         @csrf
                         <button type="submit">logout</button>
                     </form>
+
+
+                    
                     {{ __('You are logged in!') }}
                 </div>
             </div>

@@ -43,7 +43,7 @@
          </tbody>
          <tfoot>
             <tr>
-               <td colspan="6" align="center">
+               <td colspan="3" align="center">
                   {{ $facilities->appends(Request::all())->links()}}
                </td>
             </tr>
