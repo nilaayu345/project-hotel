@@ -39,5 +39,17 @@
         - Nantinya untuk controller di sesuaikan sesuai fungsinya
         - Route untuk admin adalah `localhost:8000/admin/.....`
    4. v0.0.4
+      - Menambahkan migration untuk `facility` 
       -  Menyelesaikan Create, Update, Delete pada facility View dan Controller
-      -  
+   6. v0.0.5
+      - Menambahkan helper `Helpers/Helper.php`
+      - Menambahkan model & controller gallery
+      - Menambahkan upload gambar dan CRUD untuk gallery
+      - Update route untuk gallery
+   7. v0.0.6
+      - Menambahkan helper untuk menampilkan format rupiah
+      - Menambahkan Migration, Model, Controller dan View untuk tampilan `Room`
+      - Update router untuk room
+      - Menambahkan relasi untuk menambahkan fasilitas ruangan dari `room` dan `facility`
+      - Menambahkan view untuk menambahkan facilitas kamar/room
+      - Update route untuk menambahkan fasilitas kamar/room
