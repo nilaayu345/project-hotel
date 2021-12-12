@@ -51,7 +51,7 @@
          <tfoot>
             <tr>
                <td colspan="6" align="center">
-                  {{-- {{ $facilities->appends(Request::all())->links()}} --}}
+                  {{ $rooms->appends(Request::all())->links()}}
                </td>
             </tr>
          </tfoot>
