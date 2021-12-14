@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use App\Models\Facility;
 use App\Models\Room;
 use Illuminate\Http\Request;
@@ -70,6 +71,7 @@ class RoomController extends Controller
 
         Room::create([
             'name' => $request->get('room_name'),
+            'slug_room' => Str::slug($request->get('room_name')),
             'price' => $request->get('price'),
             'description' => $request->get('description'),
             'image_path' => $image_path,
@@ -109,6 +111,7 @@ class RoomController extends Controller
         $room = Room::find($id);
         
         $room->name = $request->get('room_name');
+        $room->slug_room = Str::slug($request->get('room_name'));
         $room->price = $request->get('price');
         $room->description = $request->get('description');
 

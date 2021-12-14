@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\GalleryController;
@@ -37,6 +38,11 @@ Route::post('/registration', [UserController::class, 'saveRegistration']);
 
 // Tampilan setelah login sukses
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+/** CUSTOMER **/
+Route::group(['prefix' => 'booking'], function() {
+    Route::get('/{slug}', [BookingController::class, 'bookingRoom'])->name('booking-room');
+});
 
 
 /** ADMIN **/
@@ -81,6 +87,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::get('/{id}/facility/{facility_id}', [RoomController::class, 'processRoomFacility'])->name('process-facility');
     });
 });
+
 
 
 // Route::get('/', function () {
