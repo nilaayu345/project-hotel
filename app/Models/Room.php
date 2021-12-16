@@ -15,11 +15,25 @@ class Room extends Model
         'image_path'
     ];
 
+    /**
+     * Many to Many to table Facility
+     *
+     * @return void
+     */
     public function facility() {
         return $this->belongsToMany(
             Facility::class,
             'room_facilities',
             'room_id',
             'facility_id');
+    }
+
+    /**
+     * One to many to table transaction
+     *
+     * @return void
+     */
+    public function transactions() {
+        return $this->hasMany(Transaction::class);
     }
 }

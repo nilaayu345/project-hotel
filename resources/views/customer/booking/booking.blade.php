@@ -35,7 +35,8 @@
 
                   <div class="border p-2">
                      <p class="font-weight-bold text-center room-name">{{ $room->name }}</p>
-                     <p class="font-weight-bold text-center room-price">{{ convertRupiah($room->price) }}</p>
+                     <p class="font-weight-bold text-center room-price">{{ convertRupiah($room->price) }} 
+                        <span class="font-weight-light" style="font-size: 10px">/mlm</span></p>
                   </div>
 
                   <label class="mt-2">Fasilitas</label>
@@ -46,20 +47,23 @@
                   </ul>
 
                   <div class="mt-5">
-                     <label for="room_booked">Jumlah Kamar</label>
-                     <select name="room_booked" id="room_booked" class="form-control cursor-pointer">
-                        @for ($i = 1; $i <= 10; $i++)
-                           @if ($i == 1)
-                              <option value="{{ $i }}" selected>{{ $i }}</option>
-                              @continue
-                           @endif
-                           
-                           <option value="{{ $i }}">{{ $i }}</option>
-                           
-                        @endfor
-                     </select>
+                     <form action="{{ route('booking-room-save', ['slug' => $room->slug_room]) }}" method="post">
+                        @csrf
+                        <label for="room_booked">Jumlah Kamar</label>
+                        <select name="room_booked" id="room_booked" class="form-control cursor-pointer">
+                           @for ($i = 1; $i <= 10; $i++)
+                              @if ($i == 1)
+                                 <option value="{{ $i }}" selected>{{ $i }}</option>
+                                 @continue
+                              @endif
+                              
+                              <option value="{{ $i }}">{{ $i }}</option>
+                              
+                           @endfor
+                        </select>
 
-                     <button type="submit" class="btn btn-success btn-sm btn-block mt-2">Booked!</button>
+                        <button type="submit" class="btn btn-success btn-sm btn-block mt-2">Booked!</button>
+                     </form>
                   </div>
                </div>
             </div>

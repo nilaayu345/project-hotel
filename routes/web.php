@@ -41,7 +41,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 /** CUSTOMER **/
 Route::group(['prefix' => 'booking'], function() {
-    Route::get('/{slug}', [BookingController::class, 'bookingRoom'])->name('booking-room');
+    Route::get('/{slug}/', [BookingController::class, 'bookingRoom'])->name('booking-room');
+    Route::post('/{slug}/', [BookingController::class, 'bookingRoomSave'])->name('booking-room-save');
 });
 
 
