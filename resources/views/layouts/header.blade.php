@@ -18,13 +18,30 @@
                     <li class="nav-item {{ Request::path() == 'gallery' || Request::is('gallery/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
                     <li class="nav-item {{ Request::path() == 'contact' || Request::is('contact/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('contact') }}">Contact Us</a></li>
 
-                    <li class="nav-item {{ Request::path() == 'admin/pengguna' || Request::is('admin/pengguna/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.pengguna.index') }}">Pengguna</a></li>
+                    {{-- <li class="nav-item {{ Request::path() == 'admin/pengguna' || Request::is('admin/pengguna/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.pengguna.index') }}">Pengguna</a></li>
                     <li class="nav-item {{ Request::path() == 'admin/gallery' || Request::is('admin/gallery/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.gallery.index') }}">Gallery</a></li>
                     <li class="nav-item {{ Request::path() == 'admin/facility' || Request::is('admin/facility/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.facility.index') }}">Facility</a></li>
-                    <li class="nav-item {{ Request::path() == 'admin/room' || Request::is('admin/room/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.room.index') }}">Room</a></li>
-
+                    <li class="nav-item {{ Request::path() == 'admin/room' || Request::is('admin/room/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.room.index') }}">Room</a></li> --}}
                     
-                    <li class="nav-item" ><a class="nav-link" href="{{ route('login') }}">Sign In</a></li>
+                    <li class="nav-item {{ Request::path() == '/booking-list' || Request::is('booking-list/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('booking-list') }}">Booking List</a></li>
+
+                    @guest
+                        <li class="nav-item" ><a class="nav-link" href="{{ route('login') }}">Sign In</a></li>
+                    @else
+                        <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                {{ Auth::user()->name }}</a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link" href="#" onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">Logout</a></li>
+                            </ul>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        </li>
+                    @endguest
+                    
                 </ul>
             </div> 
         </nav>

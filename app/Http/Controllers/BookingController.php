@@ -58,11 +58,14 @@ class BookingController extends Controller
         ]);
 
         return redirect()->route('dashboard');
-        // dd($request->all(), $slug);
-        // $booking = Transaction::with(['users', 'rooms'])->first();
+    }
 
-        // dd($booking);
-        
-        // dd($booking, $booking->rooms->name, $booking->users->name);
+    public function bookingListCustomer() {
+        $transaction = Transaction::with(['users', 'rooms'])->
+            where('user_id', '=', Auth::id())->get();
+
+        // dd($transaction);
+
+        return view('customer.booking.booking-list');
     }
 }

@@ -48,6 +48,8 @@ Route::group(['prefix' => 'booking'], function() {
     Route::post('/{slug}/booked/', [BookingController::class, 'bookingRoomSave'])->name('booking-room-save');
 });
 
+/** STATUS PEMESANAN **/
+Route::get('/booking-list', [BookingController::class, 'bookingListCustomer'])->name('booking-list');
 
 /** ADMIN **/
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
