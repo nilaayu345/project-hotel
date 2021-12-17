@@ -47,7 +47,7 @@
                   </ul>
 
                   <div class="mt-5">
-                     <form action="{{ route('booking-room-save', ['slug' => $room->slug_room]) }}" method="post">
+                     <form action="{{ route('booking-room-detail', ['slug' => $room->slug_room]) }}" method="post">
                         @csrf
                         <label for="room_booked">Jumlah Kamar</label>
                         <select name="room_booked" id="room_booked" class="form-control cursor-pointer">

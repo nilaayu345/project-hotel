@@ -13,7 +13,7 @@ class Transaction extends Model
         'total_room',
         'total_price',
         'check_in',
-        'check_in',
+        'check_out',
     ];
 
     /**

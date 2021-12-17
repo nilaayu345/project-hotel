@@ -40,8 +40,8 @@
 
                   <div class="col-md-8">
                      <div class="mt-4">
-                        <h3 class="text-black">NAMA KAMAR</h3>
-                        <small>Tanggal Booking</small>
+                        <h3 class="text-black">{{ $room->name }}</h3>
+                        <small>Tanggal Booking {{ date("d-M-Y H:i:s", strtotime($room->timestamp_booked)) }}</small>
                      </div>
                   </div>
                </div>
@@ -54,7 +54,7 @@
                         Tipe Kamar
                      </div>
                      <div class="col-md-8 border font-weight-bold p-2">
-                        Nama Kamar
+                        {{ $room->name }}
                      </div>
                   </div>
                   <div class="row">
@@ -62,7 +62,7 @@
                         Jumlah Kamar
                      </div>
                      <div class="col-md-8 border font-weight-bold p-2">
-                        2 Kamar
+                        {{ $room->room_booked }} Kamar
                      </div>
                   </div>
                   <div class="row">
@@ -70,7 +70,7 @@
                         Harga
                      </div>
                      <div class="col-md-8 border font-weight-bold p-2">
-                        Rp. 100.000 /Kamar
+                        {{ convertRupiah($room->price) }} /Kamar
                      </div>
                   </div>
                   <div class="row">
@@ -78,7 +78,7 @@
                         Total
                      </div>
                      <div class="col-md-8 border font-weight-bold p-2">
-                        Rp. 200.000
+                        {{ convertRupiah($room->total) }}
                      </div>
                   </div>
                   <div class="row">
@@ -108,41 +108,48 @@
                         <span class="font-weight-light" style="font-size: 10px">/mlm</span></div>
                   </div>
 
-                  <div class="mt-2">
-                     <label>Check In</label>
-                     <div class="row">
-                        <div class='col-md-12'>
-                           <div class="form-group">
-                              <div class='input-group date' id='datetimepicker1'>
-                                 <input type='text' class="form-control" name="check_in" placeholder="Check in"/>
-                                 <span class="input-group-addon">
-                                 <span class="fa fa-calendar"></span>
-                                 </span>
+                  <form action="{{ route('booking-room-save', ['slug' => $room->slug_room]) }}" method="post">
+                     @csrf
+                     <input type="hidden" name="room_id" value="{{ $room->id }}">
+                     <input type="hidden" name="total_price" value="{{ $room->total }}">
+                     <input type="hidden" name="total_room" value="{{ $room->room_booked }}">
+
+                     <div class="mt-2">
+                        <label>Check In</label>
+                        <div class="row">
+                           <div class='col-md-12'>
+                              <div class="form-group">
+                                 <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control bg-white" name="check_in" placeholder="Check in" autocomplete="off" readonly/>
+                                    <span class="input-group-addon">
+                                    <span class="fa fa-calendar"></span>
+                                    </span>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </div>
 
-                  <div class="mt-auto">
-                     <label>Check Out</label>
-                     <div class="row">
-                        <div class='col-md-12'>
-                           <div class="form-group">
-                              <div class='input-group date' id='datetimepicker2'>
-                                 <input type='text' class="form-control" name="check_out" placeholder="Check out"/>
-                                 <span class="input-group-addon">
-                                 <span class="fa fa-calendar"></span>
-                                 </span>
+                     <div class="mt-auto">
+                        <label>Check Out</label>
+                        <div class="row">
+                           <div class='col-md-12'>
+                              <div class="form-group">
+                                 <div class='input-group date' id='datetimepicker2'>
+                                    <input type='text' class="form-control bg-white" name="check_out" placeholder="Check out" autocomplete="off"  readonly/>
+                                    <span class="input-group-addon">
+                                    <span class="fa fa-calendar"></span>
+                                    </span>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </div>
 
-                  <div class="mt-1">
-                     <button type="submit" class="btn btn-success btn-sm btn-block mt-2">Booked!</button>
-                  </div>
+                     <div class="mt-1">
+                        <button type="submit" class="btn btn-success btn-sm btn-block mt-2">Booked!</button>
+                     </div>
+                  </form>
                </div>
             </div>
          </div>

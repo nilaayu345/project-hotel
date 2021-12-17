@@ -40,9 +40,12 @@ Route::post('/registration', [UserController::class, 'saveRegistration']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /** CUSTOMER **/
+
+/** BOOKING KAMAR **/
 Route::group(['prefix' => 'booking'], function() {
     Route::get('/{slug}/', [BookingController::class, 'bookingRoom'])->name('booking-room');
-    Route::post('/{slug}/', [BookingController::class, 'bookingRoomSave'])->name('booking-room-save');
+    Route::post('/{slug}/', [BookingController::class, 'bookingRoomDetail'])->name('booking-room-detail');
+    Route::post('/{slug}/booked/', [BookingController::class, 'bookingRoomSave'])->name('booking-room-save');
 });
 
 
