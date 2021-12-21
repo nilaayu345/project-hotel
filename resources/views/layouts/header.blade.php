@@ -18,12 +18,16 @@
                     <li class="nav-item {{ Request::path() == 'gallery' || Request::is('gallery/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
                     <li class="nav-item {{ Request::path() == 'contact' || Request::is('contact/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('contact') }}">Contact Us</a></li>
 
+
                     {{-- <li class="nav-item {{ Request::path() == 'admin/pengguna' || Request::is('admin/pengguna/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.pengguna.index') }}">Pengguna</a></li>
                     <li class="nav-item {{ Request::path() == 'admin/gallery' || Request::is('admin/gallery/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.gallery.index') }}">Gallery</a></li>
                     <li class="nav-item {{ Request::path() == 'admin/facility' || Request::is('admin/facility/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.facility.index') }}">Facility</a></li>
                     <li class="nav-item {{ Request::path() == 'admin/room' || Request::is('admin/room/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.room.index') }}">Room</a></li> --}}
-                    
-                    <li class="nav-item {{ Request::path() == '/booking-list' || Request::is('booking-list/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('booking-list') }}">Booking List</a></li>
+
+                    <li class="nav-item {{ Request::path() == 'admin/booking-list' || Request::is('booking-list/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.booking-list.customer') }}">Booking List Customer</a></li>
+
+                    {{-- Customer --}}
+                    {{-- <li class="nav-item {{ Request::path() == '/booking-list' || Request::is('booking-list/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('booking-list') }}">Booking List</a></li> --}}
 
                     @guest
                         <li class="nav-item" ><a class="nav-link" href="{{ route('login') }}">Sign In</a></li>

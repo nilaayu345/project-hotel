@@ -51,6 +51,10 @@ Route::group(['prefix' => 'booking'], function() {
 /** STATUS PEMESANAN **/
 Route::get('/booking-list', [BookingController::class, 'bookingListCustomer'])->name('booking-list');
 
+/** PRINT NOTA PEMBAYARAN/BOOKING **/
+Route::get('/booking-print/{id}', [BookingController::class, 'printNotaBooking'])->name('booking-print');
+
+
 /** ADMIN **/
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
     /** PENGGUNA **/
@@ -91,6 +95,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::get('/{id}/edit', [RoomController::class, 'editRoom'])->name('edit');
         Route::put('/{id}/update', [RoomController::class, 'updateRoom'])->name('update');
         Route::get('/{id}/facility/{facility_id}', [RoomController::class, 'processRoomFacility'])->name('process-facility');
+    });
+
+    /** BOOKING LIST CUSTOMER **/
+    Route::group(['prefix' => 'booking-list', 'as' => 'booking-list.'], function() {
+        Route::get('/customer', [BookingController::class, 'bookingListAdmin'])->name('customer');
+        Route::get('/customer/{id}', [BookingController::class, 'transactionAggrement'])->name('transaction-aggrement');
     });
 });
 

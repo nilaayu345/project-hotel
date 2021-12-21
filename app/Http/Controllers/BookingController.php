@@ -60,12 +60,71 @@ class BookingController extends Controller
         return redirect()->route('dashboard');
     }
 
+    /**
+     * Undocumented function
+     *
+     * @return void
+     */
     public function bookingListCustomer() {
-        $transaction = Transaction::with(['users', 'rooms'])->
-            where('user_id', '=', Auth::id())->get();
+        $page = 5;
 
-        // dd($transaction);
+        $transactions = Transaction::with(['users', 'rooms'])
+            ->orderByDesc('created_at')
+            ->where('user_id', '=', Auth::id())
+            ->paginate($page);
 
-        return view('customer.booking.booking-list');
+        $number = numberPagination($page);
+
+        return view('customer.booking.booking-list', compact('transactions', 'number'));
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @return void
+     */
+    public function bookingListAdmin() {
+        $transactions = Transaction::with(['users', 'rooms'])
+            ->orderBy('created_at')
+            ->get();
+
+        return view('admin.booking-list.booking-list-customer', compact('transactions'));
+    }
+
+
+    /**
+     * Undocumented function
+     *
+     * @param Request $request
+     * @param [int] $id
+     * @return void
+     */
+    public function transactionAggrement(Request $request, $id) {
+        $transaction = Transaction::find($id);
+
+        $type = $request->get('type');
+        $default_type = [1, 2]; // tipe 1 : setuju,  tipe 2 : tidak setuju
+
+        if (in_array($type, $default_type)) {
+            $transaction->status = $type;
+            $transaction->save();
+
+            return redirect()->route('admin.booking-list.customer');
+        }
+
+        abort(404);
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @param [int] $id
+     * @return void
+     */
+    public function printNotaBooking($id) {
+        $pdf = \PDF::loadView('customer.booking.nota-booking')->setPaper('a5', 'potrait');
+
+    return $pdf->stream('document.pdf');
+    // return view('customer.booking.nota-booking');
     }
 }

@@ -55,5 +55,10 @@
       - Update route untuk menambahkan fasilitas kamar/room
    8. v0.0.7
       - Membuat model, controller `transaction` untuk booking
-      - Konfigurasi transaksi `booking` kamar dan detail booked kamar yang dipilih
+      - Konfigurasi transaksi `booking` kamar dan `detail booked` kamar yang dipilih
       - Setelah melakukan booking, maka akan diarahkan ke halaman status pemesanan/book
+   
+   ### Minggu 3
+   9. v0.0.8
+      - Menambahkan status pemesanan
+      - Install library `barryvdh/laravel-dompdf`
