@@ -92,22 +92,22 @@
       <hr>
       <div>
          <small class="sub-title-body">Nama</small>
-         <div class="title-body">AGUS PRASETYO</div>
+         <div class="title-body">{{ strtoupper($transaction->users->name) }}</div>
       </div>
 
       <table style="margin-top: 10px;">
          <tr>
             <td style="border: none; width: 40%">
                <small class="sub-title-body">Check-In</small>
-               <div class="sub-body">1 Dec 2021 10:00:00</div>
+               <div class="sub-body">{{ date("d-M-Y H:i:s", strtotime($transaction->check_in)) }}</div>
             </td>
             <td style="border: none; width: 40%">
                <small class="sub-title-body">Check-Out</small>
-               <div class="sub-body">1 Dec 2021 10:00:00</div>
+               <div class="sub-body">{{ date("d-M-Y H:i:s", strtotime($transaction->check_out)) }}</div>
             </td>
             <td style="border: none; width: 20%">
                <small class="sub-title-body">Durasi</small>
-               <div class="sub-body">2 Malam</div>
+               <div class="sub-body">{{ $transaction->total_room }} Malam</div>
             </td>
          </tr>
       </table>
@@ -122,7 +122,7 @@
                   <small style="font-size: 10px">Nama Hotel</small>
                </td>
                <td style="border: none; width: 70%;">
-                  <div class="sub-body"><span>: </span>HOTEL MELATI</div>
+                  <div class="sub-body"><span>: </span>{{ strtoupper($transaction->rooms->name) }}</div>
                </td>
             </tr>
             <tr>
@@ -130,7 +130,7 @@
                   <small style="font-size: 10px">Harga</small>
                </td>
                <td style="border: none; width: 70%;">
-                  <div class="sub-body"><span>: </span>Rp. 300.000</div>
+                  <div class="sub-body"><span>: </span>{{ convertRupiah($transaction->rooms->price) }}</div>
                </td>
             </tr>
             <tr>
@@ -138,7 +138,7 @@
                   <small style="font-size: 10px">Jumlah Pemesanan</small>
                </td>
                <td style="border: none; width: 70%;">
-                  <div class="sub-body"><span>: </span>x1</div>
+                  <div class="sub-body"><span>: </span>x{{ $transaction->total_room }}</div>
                </td>
             </tr>
             <tr>
@@ -146,7 +146,7 @@
                   <small style="font-size: 10px">Total</small>
                </td>
                <td style="border: none; width: 70%;">
-                  <div class="sub-body"><span>: </span>Rp. 300.000</div>
+                  <div class="sub-body"><span>: </span>{{ convertRupiah($transaction->total_price) }}</div>
                </td>
             </tr>
          </table>

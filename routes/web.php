@@ -21,6 +21,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/**  LOGIN, LOGOUT, REGISTER **/
+Route::get('/login', [LoginController::class, 'showLoginForm'])->middleware('guest')->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+Route::get('/registration', [UserController::class, 'registration'])->middleware('guest')->name('registration');
+Route::post('/registration', [UserController::class, 'saveRegistration']);
+
+/** CUSTOMER **/
+
 /** DASHBOARD **/
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/about', [DashboardController::class, 'aboutUs'])->name('about');
@@ -28,35 +37,29 @@ Route::get('/contact', [DashboardController::class, 'contactUs'])->name('contact
 Route::get('/booking', [DashboardController::class, 'booking'])->name('booking');
 Route::get('/gallery', [DashboardController::class, 'gallery'])->name('gallery');
 
+Route::group(['middleware' => ['auth', 'role:ADMIN|CUSTOMER']], function() {
+    /** BOOKING KAMAR **/
+    Route::group(['prefix' => 'booking'], function() {
+        Route::get('/{slug}/', [BookingController::class, 'bookingRoom'])->name('booking-room');
+        Route::post('/{slug}/', [BookingController::class, 'bookingRoomDetail'])->name('booking-room-detail');
+        Route::post('/{slug}/booked/', [BookingController::class, 'bookingRoomSave'])->name('booking-room-save');
+    });
 
-// Login, Logout, Register
-Route::get('/login', [LoginController::class, 'showLoginForm'])->middleware('guest')->name('login');
-Route::post('/login', [LoginController::class, 'login']);
-Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-Route::get('/registration', [UserController::class, 'registration'])->middleware('guest')->name('registration');
-Route::post('/registration', [UserController::class, 'saveRegistration']);
+    /** STATUS PEMESANAN **/
+    Route::get('/booking-list', [BookingController::class, 'bookingListCustomer'])->name('booking-list');
 
-// Tampilan setelah login sukses
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-/** CUSTOMER **/
-
-/** BOOKING KAMAR **/
-Route::group(['prefix' => 'booking'], function() {
-    Route::get('/{slug}/', [BookingController::class, 'bookingRoom'])->name('booking-room');
-    Route::post('/{slug}/', [BookingController::class, 'bookingRoomDetail'])->name('booking-room-detail');
-    Route::post('/{slug}/booked/', [BookingController::class, 'bookingRoomSave'])->name('booking-room-save');
+    /** PRINT NOTA PEMBAYARAN/BOOKING **/
+    Route::get('/booking-print/{id}', [BookingController::class, 'printNotaBooking'])->name('booking-print');
 });
 
-/** STATUS PEMESANAN **/
-Route::get('/booking-list', [BookingController::class, 'bookingListCustomer'])->name('booking-list');
-
-/** PRINT NOTA PEMBAYARAN/BOOKING **/
-Route::get('/booking-print/{id}', [BookingController::class, 'printNotaBooking'])->name('booking-print');
-
+/*********************************************************************************************************************************/
 
 /** ADMIN **/
-Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
+Route::group([
+                'middleware' => ['auth', 'role:ADMIN'],
+                'prefix' => 'admin', 
+                'as' => 'admin.'
+            ], function() {
     /** PENGGUNA **/
     Route::group(['prefix' => 'pengguna', 'as' => 'pengguna.'], function() {
         Route::get('/', [UserController::class, 'listPengguna'])->name('index');
@@ -103,16 +106,5 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function() {
         Route::get('/customer/{id}', [BookingController::class, 'transactionAggrement'])->name('transaction-aggrement');
     });
 });
-
-
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-
-// Route::get('/test', function () {
-    //     return view('layouts.index');
-// });
 
 // Auth::routes();

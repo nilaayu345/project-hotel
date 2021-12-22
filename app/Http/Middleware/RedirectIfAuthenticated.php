@@ -23,7 +23,21 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+                $role = \Auth::user()->getRoleNames()->first();
+        
+                switch ($role) {
+                    case 'ADMIN':
+                        // return 'localhost:8000/admin/pengguna/';
+                        return redirect()->route('admin.pengguna.index');
+                    break;
+                    
+                    case 'CUSTOMER':
+                        // return 'localhos:8000/';
+                        return redirect()->route('dashboard');
+                        break;
+                }
+
+                // return redirect(RouteServiceProvider::HOME);
             }
         }
 

@@ -18,7 +18,7 @@
                <tr>
                   <th scope="col">#</th>
                   <th scope="col">Nama Kamar</th>
-                  <th scope="col">Jumlah Booking</th>
+                  <th scope="col" width=20px>Jumlah Booking</th>
                   <th scope="col">Total</th>
                   <th scope="col">Check In</th>
                   <th scope="col">Check Out</th>
@@ -33,8 +33,8 @@
                      <td>{{ $transaction->rooms->name }}</td>
                      <td>{{ $transaction->total_room }}</td>
                      <td>{{ convertRupiah($transaction->total_price) }}</td>
-                     <td>{{ $transaction->check_in }}</td>
-                     <td>{{ $transaction->check_out }}</td>
+                     <td>{{ date("d-M-Y H:i:s", strtotime($transaction->check_in)) }}</td>
+                     <td>{{ date("d-M-Y H:i:s", strtotime($transaction->check_out)) }}</td>
                      <td>
                         @if ($transaction->status == 1)
                            <span class="badge badge-success">Booking Berhasil!</span>
@@ -44,27 +44,15 @@
                            <span class="badge badge-info">Proses Verifikasi</span>
                         @endif
                      </td>
-                     <td>
-                        <a href="#"><span class="fa fa-print"></span></a>
+                     <td align="center">
+                        @if ($transaction->status == 1)
+                           <a href="{{ route('booking-print', ['id' => $transaction->id]) }}" title="Print Bukti Pembayaran"><span class="fa fa-print"></span></a>
+                        @else
+                        -
+                        @endif
                      </td>
                   </tr>
                @endforeach
-               {{-- @foreach ($users as $user)
-                  <tr>
-                     <th scope="row">{{ $number++ }}. </th>
-                     <td>{{ $user->name }}</td>
-                     <td>{{ $user->email }}</td>
-                     <td>{{ $user->phone }}</td>
-                     <td>
-                        @foreach ($user->getRoleNames() as $role)
-                           <span class="badge {{ $role == 'ADMIN' ? 'badge-primary' : 'badge-dark' }}">{{ $role }}</span>
-                        @endforeach
-                     </td>
-                     <td>
-                        <a href="{{ route('admin.pengguna.edit', ['id' => $user->id]) }}" class="genric-btn primary radius medium">Edit</a>
-                     </td>
-                  </tr>
-               @endforeach --}}
             </tbody>
             <tfoot>
                <tr>

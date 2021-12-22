@@ -12,22 +12,30 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul class="nav navbar-nav menu_nav ml-auto">
-                    <li class="nav-item {{ Request::path() == '/' ? 'active' : '' }}"><a class="nav-link" href="{{ route('dashboard') }}">Home</a></li> 
-                    <li class="nav-item {{ Request::path() == 'about' || Request::is('about*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
-                    <li class="nav-item {{ Request::path() == 'booking' || Request::is('booking/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('booking') }}">Booking</a></li>
-                    <li class="nav-item {{ Request::path() == 'gallery' || Request::is('gallery/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
-                    <li class="nav-item {{ Request::path() == 'contact' || Request::is('contact/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('contact') }}">Contact Us</a></li>
+                    <!-- CUSTOMER -->
+                    <!-- Ini digunakan untuk mengecek apakah user dalam posisi guest atau mempunyai role CUSTOMER -->
+                    @if (Auth::guest() || Auth::user()->getRoleNames()->first() == 'CUSTOMER')
+                        <li class="nav-item {{ Request::path() == '/' ? 'active' : '' }}"><a class="nav-link" href="{{ route('dashboard') }}">Home</a></li> 
+                        <li class="nav-item {{ Request::path() == 'about' || Request::is('about*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('about') }}">About Us</a></li>
+                        <li class="nav-item {{ Request::path() == 'booking' || Request::is('booking/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('booking') }}">Booking</a></li>
+                        <li class="nav-item {{ Request::path() == 'gallery' || Request::is('gallery/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
+                        <li class="nav-item {{ Request::path() == 'contact' || Request::is('contact/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('contact') }}">Contact Us</a></li>
+                    @endif
+                    
+                    @role('CUSTOMER')
+                        <li class="nav-item {{ Request::path() == 'booking-list' || Request::is('booking-list/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('booking-list') }}">Booking List</a></li>
+                    @endrole
 
+                    <!-- ADMIN -->
+                    @role('ADMIN')
+                        <li class="nav-item {{ Request::path() == 'admin/pengguna' || Request::is('admin/pengguna/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.pengguna.index') }}">Pengguna</a></li>
+                        <li class="nav-item {{ Request::path() == 'admin/gallery' || Request::is('admin/gallery/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.gallery.index') }}">Gallery</a></li>
+                        <li class="nav-item {{ Request::path() == 'admin/facility' || Request::is('admin/facility/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.facility.index') }}">Facility</a></li>
+                        <li class="nav-item {{ Request::path() == 'admin/room' || Request::is('admin/room/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.room.index') }}">Room</a></li>
+                        <li class="nav-item {{ Request::path() == 'admin/booking-list' || Request::is('admin/booking-list/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.booking-list.customer') }}">Booking List Customer</a></li>
+                        <li class="nav-item {{ Request::path() == 'admin/report' || Request::is('admin/report/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.booking-list.customer') }}">Report</a></li>
+                    @endrole
 
-                    {{-- <li class="nav-item {{ Request::path() == 'admin/pengguna' || Request::is('admin/pengguna/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.pengguna.index') }}">Pengguna</a></li>
-                    <li class="nav-item {{ Request::path() == 'admin/gallery' || Request::is('admin/gallery/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.gallery.index') }}">Gallery</a></li>
-                    <li class="nav-item {{ Request::path() == 'admin/facility' || Request::is('admin/facility/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.facility.index') }}">Facility</a></li>
-                    <li class="nav-item {{ Request::path() == 'admin/room' || Request::is('admin/room/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.room.index') }}">Room</a></li> --}}
-
-                    <li class="nav-item {{ Request::path() == 'admin/booking-list' || Request::is('booking-list/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.booking-list.customer') }}">Booking List Customer</a></li>
-
-                    {{-- Customer --}}
-                    {{-- <li class="nav-item {{ Request::path() == '/booking-list' || Request::is('booking-list/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('booking-list') }}">Booking List</a></li> --}}
 
                     @guest
                         <li class="nav-item" ><a class="nav-link" href="{{ route('login') }}">Sign In</a></li>

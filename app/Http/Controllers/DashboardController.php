@@ -15,7 +15,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard.index');
+        $rooms = Room::all();
+
+        return view('dashboard.index', compact('rooms'));
     }
 
     /**

@@ -19,7 +19,7 @@
                   <th scope="col">#</th>
                   <th scope="col">Nama Customer</th>
                   <th scope="col">Nama Kamar</th>
-                  <th scope="col">Jumlah Booking</th>
+                  <th scope="col" width="10px">Jumlah Booking</th>
                   <th scope="col">Total</th>
                   <th scope="col">Check In</th>
                   <th scope="col">Check Out</th>

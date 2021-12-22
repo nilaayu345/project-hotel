@@ -85,7 +85,7 @@ class BookingController extends Controller
      */
     public function bookingListAdmin() {
         $transactions = Transaction::with(['users', 'rooms'])
-            ->orderBy('created_at')
+            ->orderByDesc('created_at')
             ->get();
 
         return view('admin.booking-list.booking-list-customer', compact('transactions'));
@@ -122,9 +122,16 @@ class BookingController extends Controller
      * @return void
      */
     public function printNotaBooking($id) {
-        $pdf = \PDF::loadView('customer.booking.nota-booking')->setPaper('a5', 'potrait');
+        $transaction = Transaction::with(['users', 'rooms'])
+            ->where('user_id', '=', Auth::id())
+            ->where('id', '=', $id)
+            ->first();
 
-    return $pdf->stream('document.pdf');
+        $pdf = \PDF::loadView('customer.booking.print-nota-booking', [
+            'transaction' => $transaction,
+        ])->setPaper('a5', 'potrait');
+
+        return $pdf->stream('booking.pdf');
     // return view('customer.booking.nota-booking');
     }
 }
