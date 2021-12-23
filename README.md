@@ -7,7 +7,7 @@
    * copy `env.example` dan rubah menjadi `.env`, setelah itu konfigurasi database
    * `$ php artisan key:generate`
    * `$ php artisan migrate` untuk membuat **tabel**
-   * `$ php artisan db:seed` untuk mengisi dummy data pada tabel
+   * `$ php artisan storage:link` untuk membuat link untuk upload gambar
    * `$ php artisan serve` jalankan program
 
 # Routing
