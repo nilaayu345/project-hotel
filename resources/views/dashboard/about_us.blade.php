@@ -16,7 +16,6 @@
                 <div class="about_content ">
                     <h2 class="title title_color">Royal Hotel</h2>
                     <p>Royal Hotel adalah hotel bintang 5 yang ada di Kota Tuban, tepatnya di jalan Hayam Wuruk No.60. Royal Hotel ini memiliki fasilitas yang lengkap, dan banyak dikunjungi wisatawan. Bapak presiden Indonesia, Joko Widodo pernah mengunjungi Royal Hotel ini.</p>
-                    <a href="#" class="button_hover theme_btn_two">Request Custom Price</a>
                 </div>
             </div>
             <div class="col-md-6">

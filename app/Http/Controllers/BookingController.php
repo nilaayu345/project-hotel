@@ -71,7 +71,7 @@ class BookingController extends Controller
         $transactions = Transaction::with(['users', 'rooms'])
             ->orderByDesc('created_at')
             ->where('user_id', '=', Auth::id())
-            ->paginate($page);
+            ->simplePaginate($page);
 
         $number = numberPagination($page);
 
@@ -84,11 +84,15 @@ class BookingController extends Controller
      * @return void
      */
     public function bookingListAdmin() {
+        $page = 5;
+
         $transactions = Transaction::with(['users', 'rooms'])
             ->orderByDesc('created_at')
-            ->get();
+            ->simplePaginate($page);
 
-        return view('admin.booking-list.booking-list-customer', compact('transactions'));
+        $number = numberPagination($page);
+        
+        return view('admin.booking-list.booking-list-customer', compact('transactions', 'number'));
     }
 
 

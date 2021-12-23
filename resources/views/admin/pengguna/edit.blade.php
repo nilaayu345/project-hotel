@@ -37,6 +37,7 @@
                         @php
                            $roles = Spatie\Permission\Models\Role::all();
                         @endphp
+                        
                         <select class="form-control" name="role">
                            <option selected disabled>Select Role</option>
                            @foreach ($roles as $role)

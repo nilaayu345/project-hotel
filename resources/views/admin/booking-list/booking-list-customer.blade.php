@@ -27,9 +27,9 @@
                </tr>
             </thead>
             <tbody>
-               @foreach ($transactions as $i => $transaction)
+               @foreach ($transactions as $transaction)
                   <tr>
-                     <th scope="row">{{ ++$i }}. </th>
+                     <th scope="row">{{ $number++ }}. </th>
                      <td>{{ $transaction->users->name }}</td>
                      <td>{{ $transaction->rooms->name }}</td>
                      <td>{{ $transaction->total_room }}</td>
@@ -55,8 +55,8 @@
             </tbody>
             <tfoot>
                <tr>
-                  <td colspan="6" align="center">
-                     {{-- {{ $users->appends(Request::all())->links()}} --}}
+                  <td colspan="8" align="center">
+                     {{ $transactions->appends(Request::all())->links()}}
                   </td>
                </tr>
             </tfoot>

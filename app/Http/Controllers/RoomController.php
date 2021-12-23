@@ -147,11 +147,11 @@ class RoomController extends Controller
 
         // jika tipenya 'ADD'
         if ($type == 'add') {
-            $room->facility()->attach($facility_id);
+            $room->facility()->attach($facility_id); // tambah relasi/fasilitas kamar
 
             return redirect()->back();
         } else if (($type == 'delete')) {
-            $room->facility()->detach($facility_id);
+            $room->facility()->detach($facility_id); // hapus relasi/fasilitas kamar
 
             return redirect()->back();
         } else {

@@ -60,6 +60,7 @@ Route::group([
                 'prefix' => 'admin', 
                 'as' => 'admin.'
             ], function() {
+
     /** PENGGUNA **/
     Route::group(['prefix' => 'pengguna', 'as' => 'pengguna.'], function() {
         Route::get('/', [UserController::class, 'listPengguna'])->name('index');

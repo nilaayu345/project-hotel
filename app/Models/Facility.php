@@ -11,6 +11,11 @@ class Facility extends Model
         'facility_name',
     ];
 
+    /**
+     * Many to Many to table room
+     *
+     * @return void
+     */
     public function room() {
         return $this->belongsToMany(
             Room::class,

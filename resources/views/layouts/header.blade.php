@@ -33,7 +33,6 @@
                         <li class="nav-item {{ Request::path() == 'admin/facility' || Request::is('admin/facility/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.facility.index') }}">Facility</a></li>
                         <li class="nav-item {{ Request::path() == 'admin/room' || Request::is('admin/room/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.room.index') }}">Room</a></li>
                         <li class="nav-item {{ Request::path() == 'admin/booking-list' || Request::is('admin/booking-list/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.booking-list.customer') }}">Booking List Customer</a></li>
-                        <li class="nav-item {{ Request::path() == 'admin/report' || Request::is('admin/report/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin.booking-list.customer') }}">Report</a></li>
                     @endrole
 
 

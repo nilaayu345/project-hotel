@@ -21,7 +21,7 @@
                 <div class="accomodation_item text-center">
                     <div class="hotel_img">
                         <img src="{{ asset('storage/' . $room->image_path) }}" class="img-fluid" alt="{{ $room->name }}">
-                        <a href="{{ route('booking-room', $room->slug_room) }}" class="btn theme_btn button_hover">Book Now</a>
+                        <a href="{{ route('booking-room', ['slug' => $room->slug_room]) }}" class="btn theme_btn button_hover">Book Now</a>
                     </div>
                     <a href="#"><h4 class="sec_h4">{{ $room->name }}</h4></a>
                     <h5>{{ convertRupiah($room->price) }}<small>/night</small></h5>
