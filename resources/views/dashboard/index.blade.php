@@ -42,6 +42,9 @@
         </div>
     </div>
 </section>
+<div class="pb-5 text-center">
+    {{ $rooms->appends(Request::all())->links()}}
+</div>
 <!--================ Accomodation Area  =================-->
 
 <!--================ Facilities Area  =================-->
