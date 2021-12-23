@@ -10,8 +10,8 @@
         <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
         <div class="container">
             <div class="banner_content text-center">
-                <h6>Away from monotonous life</h6>
-                <h2>Relax Your Mind</h2>
+                <h6>Welcome To</h6>
+                <h2>ROYAL HOTEL</h2>
                 <p>Royal Hotel can make your holiday very colorful and memorable<br> Hayam Wuruk Street No.60 Tuban, Jawa Timur, Indonesia.</p>
                 <a href="#" class="btn theme_btn button_hover">Get Started</a>
             </div>
@@ -25,7 +25,6 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_color">Hotel Accomodation</h2>
-            <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
         </div>
         <div class="row mb_30">
             @foreach ($rooms as $room)
@@ -36,7 +35,7 @@
                         <a href="{{ route('booking-room', ['slug' => $room->slug_room]) }}" class="btn theme_btn button_hover">Book Now</a>
                     </div>
                     <a href="{{ route('booking-room', ['slug' => $room->slug_room]) }}"><h4 class="sec_h4">{{ $room->name }}</h4></a>
-                    <h5>{{ convertRupiah($room->price) }}<small>/mlm</small></h5>
+                    <h5>{{ convertRupiah($room->price) }}<small>/night</small></h5>
                 </div>
             </div>
             @endforeach
@@ -52,43 +51,43 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_w">Royal Facilities</h2>
-            <p>Who are in extremely love with eco friendly system.</p>
+            <p>Fasilitas yang ditawarkan di Royal Hotel sangat lengkap, meliputi:</p>
         </div>
         <div class="row mb_30">
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
-                    <p>Restaurant at the Royal Hotel provides a variety of asian food, as well as western food.</p>
+                    <p>Restoran di Royal Hotel menyediakan berbagai macam menu makanan Asia dan makanan barat</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
-                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    <p>Sport Club di Royal Hotel sangaat luas. Customer bisa mencobanya kapan saja karena buka 24 jam</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pool</h4>
-                    <p>Royal Hotel provides a private pool or a public swimming pool that can be used anytime.</p>
+                    <p>Royal Hotel menyediakan kolam renang pribadi atau kolam renang umum yang dapat digunakan kapan saja</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
-                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    <p>Jika kita tidak membawa kendaraan untuk jalan-jalan, Royal Hotel juga menyediakan rent a car untuk bisa kita sewa</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
-                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                    <p>Royal Hotel juga memiliki museum yang bisa di kunjungi oleh wisatawan yang berkunjung disana</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Bar</h4>
-                    <p>Bar here is often visited by young people to old people just for fun.</p>
+                    <p>Bar disini sering dikunjungi oleh anak muda hingga orang tua hanya untuk iseng</p>
                 </div>
             </div>
         </div>

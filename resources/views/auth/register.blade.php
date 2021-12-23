@@ -33,7 +33,7 @@
         <!-- /.login-logo -->
         <div class="login-logo">
             <a href="{{ route('dashboard') }}">
-                <h3>Logo Hotel</h3>
+                <h3>Royal Hotel</h3>
             </a>
         {{-- <a class="navbar-brand logo_h" href="index.html"><img src="image/Logo.png" alt="" width="200px"></a> --}}
         </div>

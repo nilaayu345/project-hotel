@@ -22,7 +22,7 @@
                         <div class="col-md-6">
                            <img src="{{ asset('storage/' . $room->image_path )}}" class="img-fluid">
                            <input type="file" name="image" class="form-control mt-2">
-                           <small class="text-danger d-block float-left">* Kosongkan kalau tidak mengubah gambar</small>
+                           <small class="text-danger d-block float-left">* Kosongkan kalau tidak ingin mengubah gambar</small>
 
                         </div>
                         <div class="col-md-6">
@@ -60,7 +60,7 @@
                   <table class="table table-hover text-dark mt-3">
                      <thead>
                         <tr>
-                           <th scope="col" width=10%>#</th>
+                           <th scope="col" width=10%>No</th>
                            <th scope="col" width=70%>Facility Name</th>
                            <th scope="col" width=20%>Action</th>
                         </tr>

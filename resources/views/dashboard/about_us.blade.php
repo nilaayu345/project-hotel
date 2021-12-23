@@ -15,7 +15,7 @@
             <div class="col-md-6 d_flex align-items-center">
                 <div class="about_content ">
                     <h2 class="title title_color">Royal Hotel</h2>
-                    <p>Royal Hotel adalah hotel bintang 5 yang ada di Kota Tuban, tepatnya di jalan Hayam Wuruk No.60. Royal Hotel ini memiliki fasilitas yang lengkap, dan banyak dikunjungi wisatawan. Bapak presiden Indonesia, Joko Widodo pernah mengunjungi Royal Hotel ini.</p>
+                    <p>Royal Hotel yang berada di Tuban, Jawa Timur, Indonesia didirikan pada tahun 2019 bulan Juni terdiri dari 72 kamar. Seiring dengan perkembangan sektor MICE industry, hotel ini dilengkapi dengan ruang rapat yang telah mendukung konsep cyber meeting. Saat ini Royal Hotel Tuban, dikelola oleh subholding perusahaannya sendiri dengan nama Royality Hotel Management.</p>
                 </div>
             </div>
             <div class="col-md-6">

@@ -16,7 +16,7 @@
          <table class="table table-hover text-dark">
             <thead>
                <tr>
-                  <th scope="col">#</th>
+                  <th scope="col">No</th>
                   <th scope="col">Nama Customer</th>
                   <th scope="col">Nama Kamar</th>
                   <th scope="col" width="10px">Jumlah Booking</th>

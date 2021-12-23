@@ -13,7 +13,7 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_color">Booking Hotel</h2>
-            <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, </p>
+            <p>Ini adalah contoh dari beberapa kategori kamar yang dimiliki oleh Royal Hotel</p>
         </div>
         <div class="row mb_30 justify-content-center">
             @foreach ($rooms as $room)

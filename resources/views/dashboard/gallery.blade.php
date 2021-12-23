@@ -12,7 +12,7 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_color">Royal Hotel Gallery</h2>
-            <p>Who are in extremely love with eco friendly system.</p>
+            <p>Ini adalah halaman Galeri yang dimiliki oleh Royal Hotel</p>
         </div>
         <div class="row imageGallery1" id="gallery">
             @foreach ($galleries as $gallery)

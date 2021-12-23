@@ -48,7 +48,7 @@
                      <div class="mb-3">
                         <input type="password" name="password" class="form-control" placeholder="Password" >
                         <div class="">
-                           <small class="text-danger d-block float-left">* Kosongkan kalau tidak mengubah password</small>
+                           <small class="text-danger d-block float-left">* Kosongkan jika tidak ingin mengubah password</small>
                         </div>
                      </div>
                      <div class="row mt-5 mb-3">

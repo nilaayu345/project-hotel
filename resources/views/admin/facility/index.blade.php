@@ -24,7 +24,7 @@
       <table class="table table-hover text-dark mt-3">
          <thead>
             <tr>
-               <th scope="col" width=10%>#</th>
+               <th scope="col" width=10%>No</th>
                <th scope="col" width=70%>Facility Name</th>
                <th scope="col" width=20%>Action</th>
             </tr>

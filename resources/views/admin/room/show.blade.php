@@ -55,7 +55,7 @@
                   <table class="table table-hover text-dark mt-3">
                      <thead>
                         <tr>
-                           <th scope="col" width=20%>#</th>
+                           <th scope="col" width=20%>No</th>
                            <th scope="col" width=80%>Facility Name</th>
                         </tr>
                      </thead>

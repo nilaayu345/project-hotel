@@ -16,8 +16,8 @@
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="lnr lnr-home"></i>
-                        <h6>California, United States</h6>
-                        <p>Santa monica bullevard</p>
+                        <h6>Tuban, Jawa Timur, Indonesia</h6>
+                        <p>Royal Hotel</p>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                     <div class="info_item">
                         <i class="lnr lnr-phone-handset"></i>
                         <h6><a href="#">00 (440) 9865 562</a></h6>
-                        <p>Mon to Fri 9am to 6 pm</p>
+                        <p>Senin - Minggu jam 6am - 12pm</p>
                     </div>
                 </div>
             </div>
@@ -34,8 +34,8 @@
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="lnr lnr-envelope"></i>
-                        <h6><a href="#">support@colorlib.com</a></h6>
-                        <p>Send us your query anytime!</p>
+                        <h6><a href="#">royalhotel@gmail.com</a></h6>
+                        <p>Kirimkan pertanyaan Anda kapan saja!</p>
                     </div>
                 </div>
             </div>
