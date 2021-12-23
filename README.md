@@ -1,7 +1,7 @@
 # Project Hotel
 
 # How to install
-   * `$ git clone https://github.com/nilayu345/project_hotel.git`
+   * `$ git clone https://github.com/nilayu345/project_hotel.git`s
    * `$ cd project_hotel` 
    * `$ composer install`, kalau tidak bisa cona `$ composer update`
    * copy `env.example` dan rubah menjadi `.env`, setelah itu konfigurasi database
