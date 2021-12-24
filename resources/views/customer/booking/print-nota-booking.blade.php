@@ -98,11 +98,11 @@
       <table style="margin-top: 10px;">
          <tr>
             <td style="border: none; width: 40%">
-               <small class="sub-title-body">Check-In</small>
+               <small class="sub-title-body">Check In</small>
                <div class="sub-body">{{ date("d-M-Y H:i:s", strtotime($transaction->check_in)) }}</div>
             </td>
             <td style="border: none; width: 40%">
-               <small class="sub-title-body">Check-Out</small>
+               <small class="sub-title-body">Check Out</small>
                <div class="sub-body">{{ date("d-M-Y H:i:s", strtotime($transaction->check_out)) }}</div>
             </td>
             <td style="border: none; width: 20%">
@@ -127,7 +127,7 @@
             </tr>
             <tr>
                <td style="border: none; width: 30%; padding: 5px 0">
-                  <small style="font-size: 10px">Harga</small>
+                  <small style="font-size: 10px"> Jumlah Harga</small>
                </td>
                <td style="border: none; width: 70%;">
                   <div class="sub-body"><span>: </span>{{ convertRupiah($transaction->rooms->price) }}</div>
@@ -143,7 +143,7 @@
             </tr>
             <tr>
                <td style="border: none; width: 30%; padding: 5px 0">
-                  <small style="font-size: 10px">Total</small>
+                  <small style="font-size: 10px">Total Harga</small>
                </td>
                <td style="border: none; width: 70%;">
                   <div class="sub-body"><span>: </span>{{ convertRupiah($transaction->total_price) }}</div>

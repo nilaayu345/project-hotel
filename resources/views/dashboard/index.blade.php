@@ -12,7 +12,7 @@
             <div class="banner_content text-center">
                 <h6>Welcome To</h6>
                 <h2>ROYAL HOTEL</h2>
-                <p>Royal Hotel can make your holiday very colorful and memorable<br> Hayam Wuruk Street No.60 Tuban, Jawa Timur, Indonesia.</p>
+                <p>Royal Hotel can make your holiday very colorful and memorable<br> Royal Hotel berada di Jalan Hayam Wuruk No.60 Tuban, Jawa Timur, Indonesia.</p>
                 <a href="#" class="btn theme_btn button_hover">Get Started</a>
             </div>
         </div>
@@ -54,7 +54,7 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_w">Royal Facilities</h2>
-            <p>Fasilitas yang ditawarkan di Royal Hotel sangat lengkap, meliputi:</p>
+            <p>Ini adalah beberapa Fasilitas yang ditawarkan di Royal Hotel</p>
         </div>
         <div class="row mb_30">
             <div class="col-lg-4 col-md-6">

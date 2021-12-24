@@ -12,7 +12,8 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_color">Royal Hotel Gallery</h2>
-            <p>Ini adalah halaman Galeri yang dimiliki oleh Royal Hotel</p>
+            <p>Ini adalah Gallery Royal Hotel</p>
+            <p>Setiap minggu kami akan mengupdate Gallery Royal Hotel</p>
         </div>
         <div class="row imageGallery1" id="gallery">
             @foreach ($galleries as $gallery)

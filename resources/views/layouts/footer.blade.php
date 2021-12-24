@@ -10,7 +10,7 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
-                    <h6 class="footer_title">Navigation Links</h6>
+                    <h6 class="footer_title">Navigation</h6>
                     <div class="row">
                         <div class="col-4">
                             <ul class="list_style">
@@ -32,7 +32,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <h6 class="footer_title">Newsletter</h6>
-                    <p>Royal Hotel merupakan hotel bintang 5 nomer 1 yang ada di Tuban, Jawa Timur. Fasilitas yang dimiliki di hotel ini sangat lengkap.</p>		
+                    <p>Royal Hotel merupakan hotel bintang 5 nomer 1 yang ada di Tuban, Jawa Timur, Indonesia. Fasilitas yang dimiliki di hotel ini sangat lengkap.</p>		
                     <div id="mc_embed_signup">
                         <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
                             <div class="input-group d-flex flex-row">	

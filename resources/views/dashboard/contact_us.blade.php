@@ -25,8 +25,9 @@
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="lnr lnr-phone-handset"></i>
-                        <h6><a href="#">00 (440) 9865 562</a></h6>
-                        <p>Senin - Minggu jam 6am - 12pm</p>
+                        <h6><a href="#">08 (560) 9865 562</a></h6>
+                        <p>Buka 24 Jam</p>
+                        <p>Senin - Minngu</p>
                     </div>
                 </div>
             </div>
@@ -35,7 +36,7 @@
                     <div class="info_item">
                         <i class="lnr lnr-envelope"></i>
                         <h6><a href="#">royalhotel@gmail.com</a></h6>
-                        <p>Kirimkan pertanyaan Anda kapan saja!</p>
+                        <p>Jika anda ingin bertanya silahkan kirim email saja!</p>
                     </div>
                 </div>
             </div>

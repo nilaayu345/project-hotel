@@ -13,7 +13,7 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_color">Booking Hotel</h2>
-            <p>Ini adalah contoh dari beberapa kategori kamar yang dimiliki oleh Royal Hotel</p>
+            <p>Klik salah satu jika anda ingin memesan kamar di Royal Hotel ini!</p>
         </div>
         <div class="row mb_30 justify-content-center">
             @foreach ($rooms as $room)

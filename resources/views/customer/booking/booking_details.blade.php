@@ -41,7 +41,7 @@
                   <div class="col-md-8">
                      <div class="mt-4">
                         <h3 class="text-black">{{ $room->name }}</h3>
-                        <small>Tanggal Booking {{ date("d-M-Y H:i:s", strtotime($room->timestamp_booked)) }}</small>
+                        <small>Tanggal Booking{{ date("d-M-Y H:i:s", strtotime($room->timestamp_booked)) }}</small>
                      </div>
                   </div>
                </div>
@@ -105,7 +105,7 @@
 
                   <div class="border">
                      <div class="font-weight-bold text-center room-price p-2">{{ convertRupiah($room->price) }} 
-                        <span class="font-weight-light" style="font-size: 10px">/mlm</span></div>
+                        <span class="font-weight-light" style="font-size: 10px">/night</span></div>
                   </div>
 
                   <form action="{{ route('booking-room-save', ['slug' => $room->slug_room]) }}" method="post">
@@ -147,7 +147,7 @@
                      </div>
 
                      <div class="mt-1">
-                        <button type="submit" class="btn btn-success btn-sm btn-block mt-2">Booked!</button>
+                        <button type="submit" class="btn btn-success btn-sm btn-block mt-2">Booking</button>
                      </div>
                   </form>
                </div>

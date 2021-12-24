@@ -62,7 +62,7 @@
                            @endfor
                         </select>
 
-                        <button type="submit" class="btn btn-success btn-sm btn-block mt-2">Booked!</button>
+                        <button type="submit" class="btn btn-success btn-sm btn-block mt-2">Booking!</button>
                      </form>
                   </div>
                </div>
