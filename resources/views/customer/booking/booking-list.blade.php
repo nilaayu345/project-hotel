@@ -19,7 +19,7 @@
                   <th scope="col">No</th>
                   <th scope="col">Nama Kamar</th>
                   <th scope="col" width=20px>Jumlah Booking</th>
-                  <th scope="col">Total</th>
+                  <th scope="col">Total Harga</th>
                   <th scope="col">Check In</th>
                   <th scope="col">Check Out</th>
                   <th scope="col">Status/Note</th>

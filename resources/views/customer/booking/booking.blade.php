@@ -36,7 +36,7 @@
                   <div class="border p-2">
                      <p class="font-weight-bold text-center room-name">{{ $room->name }}</p>
                      <p class="font-weight-bold text-center room-price">{{ convertRupiah($room->price) }} 
-                        <span class="font-weight-light" style="font-size: 10px">/mlm</span></p>
+                        <span class="font-weight-light" style="font-size: 10px">/night</span></p>
                   </div>
 
                   <label class="mt-2">Fasilitas</label>
