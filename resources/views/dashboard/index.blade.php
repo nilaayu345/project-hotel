@@ -54,13 +54,13 @@
     <div class="container">
         <div class="section_title text-center">
             <h2 class="title_w">Royal Facilities</h2>
-            <p>Ini adalah beberapa Fasilitas yang ditawarkan di Royal Hotel</p>
+            <p>Ini adalah beberapa Fasilitas yang ada di Royal Hotel</p>
         </div>
         <div class="row mb_30">
             <div class="col-lg-4 col-md-6">
                 <div class="facilities_item">
                     <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
-                    <p>Restoran di Royal Hotel menyediakan berbagai macam menu makanan Asia dan makanan barat</p>
+                    <p>Restoran di Royal Hotel menyediakan berbagai macam menu masakan makanan Asia dan makanan barat</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">

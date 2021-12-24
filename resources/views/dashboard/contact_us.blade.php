@@ -35,7 +35,7 @@
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="lnr lnr-envelope"></i>
-                        <h6><a href="#">royalhotel@gmail.com</a></h6>
+                        <h6><a href="#">royalhoteltuban@gmail.com</a></h6>
                         <p>Jika anda ingin bertanya silahkan kirim email saja!</p>
                     </div>
                 </div>
