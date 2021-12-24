@@ -69,7 +69,7 @@
                 <div class="row mb-3">
                     <!-- /.col -->
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary btn-block">Register Now</button>
+                        <button type="submit" class="btn btn-primary btn-block">Register Now!</button>
                     </div>
                 <!-- /.col -->
                 </div>
